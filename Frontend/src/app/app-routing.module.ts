@@ -8,11 +8,13 @@ import { AboutComponent } from './about/about.component';
 import { ClassesComponent } from './classes/classes.component';
 import { ClassComponent } from './classes/subjects/class/class.component';
 import { LibraryComponent } from './library/library.component';
+import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'blog', component: BlogComponent },
   { path: 'classes', component: ClassesComponent},
   { path: 'class', component:ClassComponent},
   { path: 'library' , component:LibraryComponent },

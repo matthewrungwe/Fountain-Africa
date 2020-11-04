@@ -24,6 +24,7 @@ import { QuestionsComponent } from './classes/dialog/questions/questions.compone
 import { SubjectComponent } from './classes/dialog/subject/subject.component'
 import { LibraryComponent } from './library/library.component';
 import { AboutComponent } from './about/about.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { AboutComponent } from './about/about.component';
     QuestionsComponent,
     SubjectComponent,
     LibraryComponent,
-    AboutComponent
+    AboutComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
