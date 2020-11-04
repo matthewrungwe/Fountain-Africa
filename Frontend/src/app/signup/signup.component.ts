@@ -52,6 +52,7 @@ export class SignupComponent implements OnInit {
     }
 
     this.isSignedUp = false;
+    this.isBtnClicked = true;
   }
 
   // Route to dashboard when user is successful

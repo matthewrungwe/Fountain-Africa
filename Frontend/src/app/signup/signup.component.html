@@ -11,12 +11,15 @@
                     <div class="input-block">
                         <label for="name">Full Name(s)<sup>*</sup></label>
                         <input type="text" name="name" id="name" [(ngModel)]="user.name" required>
-                    </div>
+                        <div class="error-msg" *ngIf="isBtnClicked && user.name === ''">
+                          <p>Name can't be blank</p>
+                        </div>
+                      </div>
                     <div class="input-block">
                         <label for="surname">Surname<sup>*</sup></label>
                         <input type="text" name="surname" id="surname" [(ngModel)]="user.surname" required>
-                        <div class="error-msg" *ngIf="">
-                          <p></p>
+                        <div class="error-msg" *ngIf="isBtnClicked && user.surname === ''">
+                          <p>Surname can't be blank</p>
                         </div>
                     </div>
                 </div>
@@ -25,7 +28,10 @@
                     <div class="input-block">
                         <label for="email">Email Address<sup>*</sup></label>
                         <input type="email" name="email" id="email" [(ngModel)]="user.email" required>
-                    </div>
+                        <div class="error-msg" *ngIf="isBtnClicked && user.email === ''">
+                          <p>Email can't be blank</p>
+                        </div>
+                      </div>
                     <div class="input-block">
                         <label for="number">Mobile Number(optional)</label>
                         <input type="tel" name="number" id="number" [(ngModel)]="user.phone">
@@ -35,7 +41,10 @@
                 <div class="input-block">
                     <label for="password">Password<sup>*</sup></label>
                     <input type="password" name="password" id="password" [(ngModel)]="user.password" required>
-                </div>
+                    <div class="error-msg" *ngIf="isBtnClicked && user.password  === ''">
+                      <p>Password can't be blank</p>
+                    </div>
+                  </div>
                 <div class="submit-block">
                     <input type="submit" value="Sign Up" class="btn" (click)="submitForm()">
                 </div>
