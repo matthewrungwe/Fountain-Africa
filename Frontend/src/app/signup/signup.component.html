@@ -15,6 +15,9 @@
                     <div class="input-block">
                         <label for="surname">Surname<sup>*</sup></label>
                         <input type="text" name="surname" id="surname" [(ngModel)]="user.surname" required>
+                        <div class="error-msg" *ngIf="">
+                          <p></p>
+                        </div>
                     </div>
                 </div>
 

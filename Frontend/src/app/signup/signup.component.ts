@@ -24,15 +24,17 @@ export class SignupComponent implements OnInit {
 
   isSignedUp: boolean;
 
+  isBtnClicked: boolean; // Checks if submit btn is clicked
+
   constructor(private userService: UserService,
               private router: Router ) { }
 
   ngOnInit(): void {
   }
 
+  // Called when submit button is clicked
   submitForm(): void {
     this.createUser();
-    console.log('Submit Buton Clicked');
   }
 
   createUser(): void {
@@ -41,8 +43,8 @@ export class SignupComponent implements OnInit {
        this.user.email != '' &&
        this.user.password != '') {
 
-      this.userService.setUser(this.user);
-      this.userService.user = this.user;
+      this.userService.setUser(this.user); // Adds user to the DB
+      this.userService.user = this.user; // Sets current user to latest signup
 
       this.createUserSuccessful();
 
