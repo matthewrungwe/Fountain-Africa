@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-blog',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent implements OnInit {
+  title = 'Fountain Africa | Blog';
 
-  constructor() { }
+  constructor(private titleService: Title) {
 
+}
   ngOnInit(): void {
+    this.titleService.setTitle(this.title);
   }
 
 }
