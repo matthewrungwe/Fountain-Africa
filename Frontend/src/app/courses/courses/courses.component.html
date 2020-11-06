@@ -1,0 +1,43 @@
+<!-- Banner Section -->
+<section id="banner">
+  <div class="banner-wrap">
+    <div class="overlay">
+      <div class="heading">
+        <h1>Our Courses</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="sidebar-courses">
+  <!-- Sidebar navigation -->
+  <aside id="sidebar-nav">
+    <h2>Course summary</h2>
+    <hr>
+    <ul>
+      <li *ngFor="let course of courses">
+        {{course.name}}
+      </li>
+    </ul>
+  </aside>
+
+  <!-- Courses section -->
+  <section id="courses">
+    <div class="courses-wrap">
+      <div class="course" *ngFor="let course of courses">
+        <div class="heading">
+          <h2>{{course.name}}</h2>
+        </div>
+        <hr>
+        <div class="modules">
+          <ul>
+            <li *ngFor="let module of course.modules">
+              {{module.name}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

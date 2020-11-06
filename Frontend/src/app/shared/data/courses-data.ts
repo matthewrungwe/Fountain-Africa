@@ -1,7 +1,7 @@
-export const Grades = [
+export const Courses = [
   { // Grade 8 Data
     name: "Grade 8",
-    subjects: [
+    modules: [
       {
         name: "English"
       },
@@ -30,7 +30,7 @@ export const Grades = [
   },
   { //  Grade  9 Data
     name: "Grade 9",
-    subjects: [
+    modules: [
       {
         name: "English"
       },
@@ -59,7 +59,7 @@ export const Grades = [
   },
   { // Grade 10 Data
     name: "Grade 10",
-    subjects: [
+    modules: [
       {
         name: "English"
       },
@@ -97,7 +97,7 @@ export const Grades = [
   },
   { // Grade 11 Data
     name: "Grade 11",
-    subjects: [
+    modules: [
       {
         name: "English"
       },
@@ -135,7 +135,7 @@ export const Grades = [
   },
   { // Grade 12 Data
     name: "Grade 12",
-    subjects: [
+    modules: [
       {
         name: "English"
       },

@@ -23,6 +23,11 @@ const routes: Routes = [
       import('./dashboard/dashboard.module')
         .then(m => m.DashboardModule)
   },
+  { path: 'courses',
+    loadChildren: () =>
+      import('./courses/courses.module')
+        .then(m => m.CoursesModule)
+  },
   { path: 'welcome', component: WelcomeComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' }
 ];

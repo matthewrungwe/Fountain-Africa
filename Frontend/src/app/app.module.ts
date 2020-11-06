@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { DashboardModule } from './dashboard/dashboard.module';
+import { CoursesModule } from './courses/courses.module';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DragScrollModule } from 'ngx-drag-scroll';
@@ -51,6 +52,7 @@ import { BlogComponent } from './blog/blog.component';
     FormsModule,
     AppRoutingModule,
     DashboardModule,
+    CoursesModule,
     NgxPaginationModule,
     NgbModule,
     DragScrollModule

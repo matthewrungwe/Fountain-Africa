@@ -185,7 +185,7 @@
 /* Why Us section */
 #why-us {
   width: 100%;
-  margin: 20px;
+  padding: 50px;
 }
 
 .content-heading {
@@ -205,9 +205,11 @@
   max-width: 800px;
   margin: 0 auto;
 }
+
 .content-text p {
   font-size: 1.1rem;
   line-height: 1.5;
+  padding: 15px 0;
 }
 /* Why Us section end */
 

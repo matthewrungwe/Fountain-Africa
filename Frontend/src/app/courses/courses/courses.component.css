@@ -1,0 +1,92 @@
+/* Banner section */
+#banner {
+  min-height: 200px;
+  height: 40vh;
+}
+
+.banner-wrap {
+  height: 100%;
+  background-image: url('../../../assets/images/explore/books.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 43, 44, 0.4);
+}
+
+#banner .heading {
+  position: relative;
+  top: 40%;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#banner .heading h1 {
+  color:#fff;
+}
+/* Banner section end */
+
+/* Sidebar and Courses */
+.sidebar-courses {
+  display: flex;
+}
+
+.sidebar-courses #sidebar-nav {
+  flex: 0.4;
+}
+
+.sidebar-courses #courses {
+  flex: 1.6;
+}
+
+/* Sidebar Navigation */
+#sidebar-nav {
+  padding: 50px 20px;
+  background-color: #4e4f50;
+}
+
+#sidebar-nav h2 {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#sidebar-nav ul {
+  list-style-type: none;
+}
+
+#sidebar-nav li {
+  color: #fff;
+  padding: 5px;
+}
+/* Sidebar Navigation end */
+
+/* Courses section */
+#courses {
+  padding: 50px 25px;
+  background-color: whitesmoke;
+}
+
+.courses-wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.course {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid rgba(78, 79, 80, 0.5);
+  border-radius: 5px;
+}
+
+.course .modules ul {
+  list-style-type: none;
+}
+
+.course .modules li {
+  padding: 5px 0;
+}
+/* Courses section end */
