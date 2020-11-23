@@ -1,12 +1,30 @@
 export const Courses = [
   { // Grade 8 Data
+    id: "grade-8",
     name: "Grade 8",
     modules: [
       {
-        name: "English"
+        name: "English",
+        chapters: [
+        ]
       },
       {
-        name: "Mathematics"
+        name: "Mathematics",
+        chapters: [
+          {
+            name: "Whole Number",
+            concept: [
+              {
+                name: "Place Values",
+                description: "Place value tell the value each digit in a number holds."
+              },
+              {
+                name: "Rounding Off",
+                description: "Rounding off is just pushing a number to the next specified range."
+              }
+            ]
+          }
+        ]
       },
       {
         name: "Mathematics Literecy"
@@ -29,6 +47,7 @@ export const Courses = [
     ]
   },
   { //  Grade  9 Data
+    id: "grade-9",
     name: "Grade 9",
     modules: [
       {
@@ -58,6 +77,7 @@ export const Courses = [
     ]
   },
   { // Grade 10 Data
+    id: "grade-10",
     name: "Grade 10",
     modules: [
       {
@@ -96,6 +116,7 @@ export const Courses = [
     ]
   },
   { // Grade 11 Data
+    id: "grade-5",
     name: "Grade 11",
     modules: [
       {
@@ -134,6 +155,7 @@ export const Courses = [
     ]
   },
   { // Grade 12 Data
+    id: "grade-12",
     name: "Grade 12",
     modules: [
       {

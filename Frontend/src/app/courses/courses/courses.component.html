@@ -27,7 +27,7 @@
     <div class="courses-wrap">
       <div class="course" *ngFor="let course of courses">
         <div class="heading">
-          <h2>{{course.name}}</h2>
+          <h2><a [routerLink]="['/courses', course.id]" routerLinkActive="router-link-active" >{{course.name}}</a></h2>
         </div>
         <hr>
         <div class="modules">
